@@ -1,0 +1,168 @@
+{
+	"items": [{
+		"label": "Animais e acessórios",
+		"url": "#/animais-e-acessorios",
+		"items": [{
+			"label": "Cachorros",
+			"url": "#/animais-e-acessorios/cachorros"
+		}, {
+			"label": "Outros animais",
+			"url": "#/animais-e-acessorios/outros-animais"
+		}, {
+			"label": "Gatos",
+			"url": "#/animais-e-acessorios/gatos"
+		}, {
+			"label": "Cavalos",
+			"url": "#/animais-e-acessorios/cavalos"
+		}, {
+			"label": "Artigos para peixes",
+			"url": "#/animais-e-acessorios/artigos-para-peixes"
+		}, {
+			"label": "Roedores",
+			"url": "#/animais-e-acessorios/roedores"
+		}]
+	}, {
+		"label": "Bebês e crianças",
+		"url": "#/bebes-e-criancas",
+		"items": [
+
+		]
+	}, {
+		"label": "Musicas e hobbies",
+		"url": "#/musicas-e-hobbies",
+		"items": [{
+			"label": "Instrumentos musicais",
+			"url": "#/musicas-e-hobbies/instrumentos-musicais"
+		}, {
+			"label": "Livros e revistas",
+			"url": "#/musicas-e-hobbies/livros-e-revistas"
+		}, {
+			"label": "Hobbies e coleções",
+			"url": "#/musicas-e-hobbies/hobbies-e-colecoes"
+		}, {
+			"label": "Musica e Filmes (DVDs e etc)",
+			"url": "#/musicas-e-hobbies/musicas-e-filmes"
+		}, {
+			"label": "Antiguidades",
+			"url": "#/musicas-e-hobbies/antiguidades"
+		}]
+	}, {
+		"label": "Moda e beleza",
+		"url": "#/moda-e-beleza",
+		"items": [{
+			"label": "Roupas e calçados",
+			"url": "#/moda-e-beleza/roupas-e-calcados"
+		}, {
+			"label": "Bijouterias, relógios e acessórios",
+			"url": "#/moda-e-beleza/bijouterias-relogios-e-acessorios"
+		}, {
+			"label": "Beleza e saúde",
+			"url": "#/moda-e-beleza/beleza-e-saude"
+		}, {
+			"label": "Bolsas, malas e mochilas",
+			"url": "#/moda-e-beleza/bolsas-malas-e-mochilas"
+		}]
+	}, {
+		"label": "Para a sua casa",
+		"url": "#/para-a-sua-casa",
+		"items": [{
+			"label": "Móveis",
+			"url": "#/para-a-sua-casa"
+		}, {
+			"label": "Jardinagem e construção",
+			"url": "#/para-a-sua-casa/jardinagem-e-construcao"
+		}, {
+			"label": "Eletrodomésticos",
+			"url": "#/para-a-sua-casa/eletrodomesticos"
+		}, {
+			"label": "Arte e decoração",
+			"url": "#/para-a-sua-casa/arte-e-decoracao"
+		}, {
+			"label": "Cama, mesa e banho",
+			"url": "#/para-a-sua-casa/cama-mesa-e-banho"
+		}]
+	}, {
+		"label": "Esportes",
+		"url": "#/esportes",
+		"items": [{
+			"label": "Esportes e ginástica",
+			"url": "#/esportes/esportes-e-ginastica"
+		}, {
+			"label": "Ciclismo",
+			"url": "#/esportes/esportes-e-ginastica"
+		}]
+	}, {
+		"label": "Eletrônicos e celulares",
+		"url": "#/eletronicos-e-celulares",
+		"items": [{
+			"label": "Celulares e telefonia",
+			"url": "#/eletronicos-e-celulares/celulares-e-telefonia"
+		}, {
+			"label": "Computadores e acessórios",
+			"url": "#/eletronicos-e-celulares/computadores-e-acessorios"
+		}, {
+			"label": "Áudio, TV, vídeo e fotografia",
+			"url": "#/eletronicos-e-celulares/audio-tv-video-e-fotografia"
+		}, {
+			"label": "Videogames",
+			"url": "#/eletronicos-e-celulares/videogames"
+		}]
+	}, {
+		"label": "Imóveis",
+		"url": "#/imoveis",
+		"items": [{
+			"label": "Venda - casas e apartamentos",
+			"url": "#/imoveis/venda-casas-e-apartamentos"
+		}, {
+			"label": "Terrenos, sítios e fazendas",
+			"url": "#/imoveis/terrenos-sitios-e-fazendas"
+		}, {
+			"label": "Aluguel - casas e apartamentos",
+			"url": "#/imoveis/aluguel-casas-e-apartamentos"
+		}, {
+			"label": "Lojas, salas e outros",
+			"url": "#/imoveis/lojas-salas-e-outros"
+		}, {
+			"label": "Lançamentos",
+			"url": "#/imoveis/lancamentos"
+		}, {
+			"label": "Temporada",
+			"url": "#/imoveis/temporada"
+		}]
+	}, {
+		"label": "Empregos e negócios",
+		"url": "#/empregos-e-negocios",
+		"items": [{
+			"label": "Serviços",
+			"url": "#/empregos-e-negocios/servicos"
+		}, {
+			"label": "Indústria, comércio e agro",
+			"url": "#/empregos-e-negocios/industria-comercio-e-agro"
+		}, {
+			"label": "Ofertas de emprego",
+			"url": "#/empregos-e-negocios/ofertas-de-emprego"
+		}, {
+			"label": "Currículos",
+			"url": "#/empregos-e-negocios/curriculos"
+		}]
+	}, {
+		"label": "Veículos e barcos",
+		"url": "#/veiculos-e-barcos",
+		"items": [{
+			"label": "Peças e acessórios",
+			"url": "#/veiculos-e-barcos/pecas-e-acessorios"
+		}, {
+			"label": "Carros",
+			"url": "#/veiculos-e-barcos/carros"
+		}, {
+			"label": "Motos",
+			"url": "#/veiculos-e-barcos/motos"
+		}, {
+			"label": "Caminhões, ônibus e vans",
+			"url": "#/veiculos-e-barcos/caminhoes-onibus-e-vans"
+		}, {
+			"label": "Barcos, lanchas e aviões",
+			"url": "#/veiculos-e-barcos/barcos-lanchas-e-avioes"
+		}]
+	}]
+}
