@@ -1,0 +1,19 @@
+{
+  "name": "olx",
+  "version": "1.0.0",
+  "description": "OLX Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "keywords": [
+    "challenge",
+    "olx"
+  ],
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (https://github.com/hemersonvianna)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9.2",
+    "npm": ">=3.10.8"
+  }
+}
