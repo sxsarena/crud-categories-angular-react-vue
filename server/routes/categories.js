@@ -1,9 +1,9 @@
 const controller = require('../controllers/categories');
 
-module.exports.routes = (app) => {
-  app.get('/api/categories', controller.getCategories);
-  app.get('/api/categories/:id', controller.getCategory);
-  app.post('/api/categories', controller.postCategory);
-  app.put('/api/categories/:id', controller.putCategory);
-  app.delete('/api/categories/:id', controller.deleteCategory);
+module.exports = (app) => {
+  app.get('/api/categories', controller.findAll);
+  app.get('/api/categories/:id', controller.findById);
+  app.post('/api/categories', controller.add);
+  app.put('/api/categories/:id', controller.update);
+  app.delete('/api/categories/:id', controller.delete);
 }
