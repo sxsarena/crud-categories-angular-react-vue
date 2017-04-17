@@ -1,6 +1,9 @@
 const Categories = require('../models/categories');
 const ObjectID = require('mongodb').ObjectID;
 
+/**
+ * Find All
+ */
 exports.findAll = (req, res) => {
   Categories
   .find({ parent: null }, { parent: 0 })
@@ -13,6 +16,9 @@ exports.findAll = (req, res) => {
   });
 }
 
+/**
+ * Find by Id
+ */
 exports.findById = (req, res) => {
   Categories
   .findById(req.params.id)
@@ -26,6 +32,9 @@ exports.findById = (req, res) => {
   });
 }
 
+/**
+ * Add
+ */
 exports.add = (req, res) => {
   const category = new Categories();
 
@@ -42,6 +51,9 @@ exports.add = (req, res) => {
   });
 }
 
+/**
+ * Update
+ */
 exports.update = (req, res) => {
   Categories.findById(req.params.id, (err, category) => {
     if(err) {
@@ -62,6 +74,9 @@ exports.update = (req, res) => {
   });
 }
 
+/**
+ * Delete
+ */
 exports.delete = (req, res) => {
   Categories.remove({ _id: req.params.id }, (err) => {
     if(err) {

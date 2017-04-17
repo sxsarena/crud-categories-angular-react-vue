@@ -4,15 +4,18 @@ const Schema = mongoose.Schema;
 mongoose.models = {};
 mongoose.modelSchemas = {};
 
+/**
+ * Categories Schema
+ */
 const CategoriesSchema = new Schema({
   label: {
     type: String,
     required: [true, 'label required'],
-    unique: true,
+    unique: true
   },
   url: {
     type: String,
-    required: [true, 'url required'],
+    required: [true, 'url required']
   },
   parent: {
     type: Schema.Types.ObjectId,
