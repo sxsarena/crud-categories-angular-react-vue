@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/00-settings/_variables';
+
+/* Color
+ ========================================================================== */
+$header-background-color: #ececec;
+$header-border-color: #d9d9d9;
+
+$logotype-background-color: #fff;
+$logotype-border-color: #d0d0d0;
+
+/* ==========================================================================
+   Header Component
+   ========================================================================== */
+.header {
+  background: $header-background-color;
+  border-bottom: 1px solid $header-border-color;
+  padding: 5px 0;
+
+  @media(min-width: $screen-desktop) {
+    padding: 10px 0;
+  }
+}
+
+/* Support
+ ========================================================================== */
+.header-support {
+  float: right;
+
+  @media(min-width: $screen-desktop) {
+    margin-top: 7px;
+  }
+}
+
+.header-support-nav {
+  display: none;
+
+  @media(min-width: $screen-desktop) {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+}
+
+.header-support-list {
+  text-align: left;
+}
+
+.header-support-item {
+  display: inline-block;
+  margin: 0 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+/* Logotype
+ ========================================================================== */
+.logotype {
+  background: $logotype-background-color;
+  border: 1px solid $logotype-border-color;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  padding: 12px 4px;
+  width: 40px;
+
+  @media(min-width: $screen-desktop) {
+    height: 56px;
+    padding: 15px 4px;
+    width: 56px;
+  }
+
+  .logotype-image {
+    float: left;
+    max-width: 100%;
+  }
+}
+
+/* Header Search Input
+ ========================================================================== */
+.header-searchInput {
+  display: block;
+  margin-top: 8px;
+}

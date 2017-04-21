@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cross-env NODE_ENV=production node server.js",
-    "start:angular": "ng serve",
+    "start:angular": "ng serve --base-href /angular",
     "build:angular": "ng build",
     "test:angular": "ng test",
     "test:server": "cross-env NODE_ENV=test mocha ./server/tests/**/*.js --reporter spec --timeout 100000",

@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/00-settings/_variables';
+
+/* Theme
+ ========================================================================== */
+$button-default-background-color: #fff;
+$button-default-background-color-hover: #f2f2f2;
+
+$button-primary-background-color: $base-orange-color;
+$button-primary-background-color-hover: $base-orange-dark-color;
+
+$button-disabled-background-color: #ccc;
+
+/* Color
+ ========================================================================== */
+$button-color: $base-blue-color;
+$button-color-light: #fff;
+$button-disabled-color: #999;
+
+/* Border Color
+ ========================================================================== */
+$button-default-border-color: $button-default-background-color;
+$button-default-border-color-hover: $button-default-background-color-hover;
+
+$button-primary-border-color: $button-primary-background-color;
+$button-primary-border-color-hover: $button-primary-background-color-hover;
+
+$button-disabled-border-color: $button-disabled-background-color;
+
+/* Button
+ ========================================================================== */
+%button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.5s;
+
+  &:hover { cursor: pointer; }
+
+  &:disabled {
+    background: $button-disabled-background-color;
+    border-color: $button-disabled-border-color;
+    color: $button-disabled-color;
+    cursor: not-allowed;
+
+    &:hover {
+      background: $button-disabled-background-color;
+      border-color: $button-disabled-border-color;
+      color: $button-disabled-color;
+    }
+  }
+}
+
+/* ==========================================================================
+   Button Component
+   ========================================================================== */
+
+/* Default
+ ========================================================================== */
+.default {
+  @extend %button;
+  background: $button-default-background-color;
+  border-color: $button-default-border-color;
+  color: $button-color;
+
+  &:hover {
+    background-color: $button-default-background-color-hover;
+    border-color: $button-default-border-color-hover;
+  }
+}
+
+/* Primary
+ ========================================================================== */
+.primary {
+  @extend %button;
+  background: $button-primary-background-color;
+  border-color: $button-primary-border-color;
+  color: $button-color-light;
+
+  &:hover {
+    background-color: $button-primary-background-color-hover;
+    border-color: $button-primary-border-color-hover;
+  }
+}
+
+/* Sizes
+ ========================================================================== */
+.small {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.medium {
+  font-size: 13px;
+  padding: 8px 15px;
+}
+
+.large {
+  font-size: 18px;
+  padding: 10px 26px;
+}
+
+/* Block
+ ========================================================================== */
+.block {
+  display: block;
+  width: 100%;
+}
+
+/* With icon
+ ========================================================================== */
+:host .button--withIcon {
+  line-height: 1.4;
+}
+
+.button--withIcon svg {
+  float: left;
+  margin-right: 5px;
+}
+
+.button--withIcon.default svg {
+  fill: $button-color;
+}
+
+.button--withIcon.primary svg {
+  fill: $button-color-light;
+}

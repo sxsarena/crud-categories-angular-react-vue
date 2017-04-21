@@ -1,0 +1,17 @@
+@import '../00-settings/_variables';
+
+.mobileOnly {
+  display: block;
+
+  @media(min-width: $screen-desktop) {
+    display: none;
+  }
+}
+
+.desktopOnly {
+  display: none;
+
+  @media(min-width: $screen-desktop) {
+    display: block;
+  }
+}

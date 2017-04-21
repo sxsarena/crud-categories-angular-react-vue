@@ -1,8 +1,23 @@
 // High-level base settings.
 $base-font-size: 62.5% !default;
-$base-font-family: Helvetica, Arial, sans-serif !default;
+$base-font-family: Arial, sans-serif !default;
 $base-font-size-px: 13px !default;
 $base-line-height: 1.2 !default;
 $base-text-color: #676a6c !default;
-$base-link-color: #1ab394 !default;
-$base-background-color: #f3f3f4 !default;
+$base-background-color: #fff !default;
+
+$base-gray-color: #fafafa;
+$base-gray-dark-color: #333;
+
+$base-yellow-color: #fff8da;
+
+$base-blue-color: #2195db;
+$base-blue-dark-color: #034d94;
+
+$base-orange-color: #ff9232;
+$base-orange-dark-color: #ee6600;
+
+$base-primary-link-color: $base-blue-color !default;
+$base-primary-link-color-hover: $base-blue-dark-color !default;
+$base-secundary-link-color: $base-gray-color !default;
+$base-secundary-link-color-hover: $base-gray-dark-color !default;

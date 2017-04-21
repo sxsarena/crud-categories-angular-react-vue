@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/00-settings/_variables';
+
+/* Color
+ ========================================================================== */
+$searchInput-border-color: #cfcfcf;
+$searchInput-icon-color: #757575;
+
+
+/* ==========================================================================
+   Search Input Component
+   ========================================================================== */
+.searchInput {
+  display: none;
+
+  @media(min-width: $screen-desktop) {
+    display: block;
+  }
+}
+
+.searchInput-group {
+  margin: 0;
+  position: relative;
+}
+
+.searchInput-field {
+  border: 1px solid $searchInput-border-color;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 42px;
+  outline: none;
+  padding: 15px 12px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.searchInput-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 40px;
+}
+
+.searchInput-action-icon {
+  fill: $searchInput-icon-color;
+}
