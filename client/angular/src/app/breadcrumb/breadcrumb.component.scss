@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/00-settings/_variables';
+
+/* Color
+ ========================================================================== */
+$breadcrumb-color: #88818b;
+
+/* ==========================================================================
+   Breadcrumb Component
+   ========================================================================== */
+.breadcrumb {
+  padding: 5px 0;
+}
+
+.breadcrumb-list {
+  text-align: left;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+}
+
+.breadcrumb-link,
+.breadcrumb-highlight {
+  color: $breadcrumb-color;
+  font-size: 11px;
+}
+
+.breadcrumb-link {
+  &:after {
+    content: ">";
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.breadcrumb-highlight {
+  font-weight: 700;
+}

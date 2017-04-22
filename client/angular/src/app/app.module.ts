@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MyHeaderComponent } from './my-header/my-header.component';
 import { MyButtonComponent } from './my-button/my-button.component';
 import { SearchInputComponent } from './search-input/search-input.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyHeaderComponent,
     MyButtonComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
