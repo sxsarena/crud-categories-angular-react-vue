@@ -17,6 +17,7 @@ $logotype-border-color: #d0d0d0;
 .header {
   background: $header-background-color;
   border-bottom: 1px solid $header-border-color;
+  margin-bottom: 5px;
   padding: 5px 0;
 
   @media(min-width: $screen-desktop) {

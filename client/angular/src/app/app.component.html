@@ -4,31 +4,41 @@
 <div class="content">
   <div class="row">
     <div class="sidebar">
-      <app-search-input></app-search-input>
+      <div class="box">
+        <app-search-input></app-search-input>
+      </div>
     </div>
     <div class="mainContent">
-      <app-tabs (selected)="log($event.selectedTab)">
-        <app-tab [tabTitle]="'Estado'">
-          <ul>
-            <li><a href="">Acre (AC)</a></li>
-            <li><a href="">Alagoas (AL)</a></li>
-            <li><a href="">Amapá (AP)</a></li>
-            <li><a href="">Amazonas (AM)</a></li>
-            <li><a href="">Bahia (BA)</a></li>
-            <li><a href="">Ceará (CE)</a></li>
-            <li><a href="">Distrito Federal (DF)</a></li>
-          </ul>
-        </app-tab>
-        <app-tab tabTitle="DDD">
-          Content 2
-        </app-tab>
-        <app-tab [tabTitle]="'Zona / Região'">
-          Content 3
-        </app-tab>
-        <app-tab [tabTitle]="'Bairro / Cidade'">
-          Content 4
-        </app-tab>
-      </app-tabs>
+      <div class="box">
+        <app-tabs>
+          <app-tab [tabTitle]="'Estado'">
+            <ul>
+              <li><a href="">Acre (AC)</a></li>
+              <li><a href="">Alagoas (AL)</a></li>
+              <li><a href="">Amapá (AP)</a></li>
+              <li><a href="">Amazonas (AM)</a></li>
+              <li><a href="">Bahia (BA)</a></li>
+              <li><a href="">Ceará (CE)</a></li>
+              <li><a href="">Distrito Federal (DF)</a></li>
+            </ul>
+          </app-tab>
+          <app-tab tabTitle="DDD">
+            Content 2
+          </app-tab>
+          <app-tab [tabTitle]="'Zona / Região'">
+            Content 3
+          </app-tab>
+          <app-tab [tabTitle]="'Bairro / Cidade'">
+            Content 4
+          </app-tab>
+        </app-tabs>
+      </div>
+      <div class="box">
+        <app-product-gallery></app-product-gallery>
+      </div>
+      <div class="box">
+        <app-product-gallery title="Você também pode gostar de:" type="vertical"></app-product-gallery>
+      </div>
     </div>
   </div>
 </div>

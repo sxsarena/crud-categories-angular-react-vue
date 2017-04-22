@@ -1,9 +1,17 @@
 @import '../assets/scss/config';
 
+.content {
+  padding: 10px 0;
+}
+
 .sidebar {
   @include x-column(6);
 }
 
 .mainContent {
   @include x-column(18);
+}
+
+.box {
+  margin-bottom: 10px;
 }

@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/config';
+
+/* ==========================================================================
+   Product Gallery Component
+   ========================================================================== */
+.productGallery-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.productGallery-list {
+  @include x-clearfix;
+}
+
+.productGallery-item {
+  @include x-column(8);
+  display: inline-block;
+}
+
+.productGallery-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.productGallery-figure {
+  float: left;
+  margin-right: 10px;
+}
+
+.productGallery-image {
+  border: 1px solid #d6d6d6;
+  height: 90px;
+  width: 120px;
+}
+
+.productGallery-text {
+  color: #333;
+  display: block;
+  font-weight: 400;
+}
+
+.productGallery-price {
+  color: #ff9232;
+  display: block;
+  font-style: normal;
+}
+
+.productGallery-list--vertical {
+  .productGallery-item {
+    @include x-column(4.8);
+  }
+
+  .productGallery-figure {
+    float: none;
+  }
+}

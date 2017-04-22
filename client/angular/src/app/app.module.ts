@@ -11,6 +11,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BannerComponent } from './banner/banner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
+import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TabComponent } from './tab/tab.component';
     BreadcrumbComponent,
     BannerComponent,
     TabsComponent,
-    TabComponent
+    TabComponent,
+    ProductGalleryComponent
   ],
   imports: [
     BrowserModule,
