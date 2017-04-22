@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/config';
+
+/* ==========================================================================
+   Tabs Component
+   ========================================================================== */
+.tabs {}
+
+.tabs-list {
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #d0d0d0;
+  border-bottom: none;
+  overflow: hidden;
+  text-align: left;
+}
+
+.tabs-item {
+  border-left: 1px solid #d0d0d0;
+  display: inline-block;
+  width: x-gridsystem-width(6);
+
+  &:first-child {
+    border-left: none;
+  }
+}
+
+.tabs-link {
+  background: #fff;
+  border-bottom: 1px solid #d0d0d0;
+  display: block;
+  color: #aaa;
+  font-size: 16px;
+  height: 40px;
+  padding: 10px;
+
+  svg {
+    fill: #aaa;
+    float: right;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.selected .tabs-link {
+  background: #fff8da;
+  border-bottom: 1px solid transparent;
+  color: #333;
+
+  svg {
+    fill: #333;
+  }
+}

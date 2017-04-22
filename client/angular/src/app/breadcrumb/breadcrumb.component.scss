@@ -1,7 +1,7 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
-@import '../../assets/scss/00-settings/_variables';
+@import '../../assets/scss/config';
 
 /* Color
  ========================================================================== */
@@ -11,7 +11,9 @@ $breadcrumb-color: #88818b;
    Breadcrumb Component
    ========================================================================== */
 .breadcrumb {
-  padding: 5px 0;
+  @include x-column(24);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .breadcrumb-list {

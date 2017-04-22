@@ -1,0 +1,10 @@
+.tab {
+  border: 1px solid #d0d0d0;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  padding: 10px;
+}
+
+.tab.selected {
+  background: #fff8da;
+}

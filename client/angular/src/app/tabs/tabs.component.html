@@ -1,0 +1,12 @@
+<div class="tabs">
+  <ul class="tabs-list">
+    <li *ngFor="let tab of tabs" class="tabs-item" [ngClass]="{'selected': tab.selected}">
+      <a href="#" (click)="selectTab(tab)" class="tabs-link">
+        {{tab.tabTitle}}
+        <svg *ngIf="tab.selected" height="14" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500 353l424.7 424.6 65.3-65.3L532.7 255 500 222.4 467.3 255 10 712.3l65.3 65.3L500 353z"/></svg>
+        <svg *ngIf="!tab.selected" height="14" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500 647l424.7-424.6 65.3 65.3L532.7 745 500 777.6 467.3 745 10 287.7l65.3-65.3L500 647z"/></svg>
+      </a>
+    </li>
+  </ul>
+  <ng-content></ng-content>
+</div>

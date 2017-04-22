@@ -1,0 +1,9 @@
+@import '../assets/scss/config';
+
+.sidebar {
+  @include x-column(6);
+}
+
+.mainContent {
+  @include x-column(18);
+}

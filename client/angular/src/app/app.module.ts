@@ -9,6 +9,8 @@ import { MyButtonComponent } from './my-button/my-button.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BannerComponent } from './banner/banner.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { BannerComponent } from './banner/banner.component';
     MyButtonComponent,
     SearchInputComponent,
     BreadcrumbComponent,
-    BannerComponent
+    BannerComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,
