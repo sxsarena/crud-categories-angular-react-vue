@@ -5,11 +5,19 @@
 }
 
 .sidebar {
-  @include x-column(6);
+  @include x-column(24);
+
+  @media(min-width: $screen-desktop) {
+    width: x-gridsystem-width(6);
+  }
 }
 
 .mainContent {
-  @include x-column(18);
+  @include x-column(24);
+
+  @media(min-width: $screen-desktop) {
+    width: x-gridsystem-width(18);
+  }
 }
 
 .box {

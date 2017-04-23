@@ -1,6 +1,6 @@
 <app-my-header></app-my-header>
-<app-breadcrumb></app-breadcrumb>
-<app-banner></app-banner>
+<app-breadcrumb class="desktopOnly"></app-breadcrumb>
+<app-banner class="desktopOnly"></app-banner>
 <div class="content">
   <div class="row">
     <div class="sidebar">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="mainContent">
-      <div class="box">
+      <div class="box desktopOnly">
         <app-tabs>
           <app-tab [tabTitle]="'Estado'">
             <ul>
@@ -33,10 +33,13 @@
           </app-tab>
         </app-tabs>
       </div>
-      <div class="box">
+      <div class="box desktopOnly">
         <app-product-gallery></app-product-gallery>
       </div>
       <div class="box">
+        <app-adverts></app-adverts>
+      </div>
+      <div class="box desktopOnly">
         <app-product-gallery title="Você também pode gostar de:" type="vertical"></app-product-gallery>
       </div>
     </div>

@@ -1,0 +1,29 @@
+<div class="adverts">
+  <header>
+    8.234.908 Resultados para essa busca
+
+    Salvar busca
+  </header>
+  <ul class="adverts-list">
+    <li *ngFor="let advert of adverts" class="adverts-item">
+      <a class="adverts-link" href="">
+        <figure class="adverts-figure">
+          <img class="adverts-image" src="{{ advert.image }}">
+        </figure>
+        <div class="adverts-description">
+          <strong class="adverts-text">
+            {{ advert.name }}
+            <span class="adverts-description-price">
+              <em class="adverts-price">{{ advert.price }}</em>
+              <em class="adverts-time">{{ advert.time }}</em>
+            </span>
+          </strong>
+          <div class="adverts-description-bottom desktopOnly">
+            <span class="adverts-specifications">{{ advert.specifications }}</span>
+            <strong class="adverts-local">{{ advert.local }}</strong>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

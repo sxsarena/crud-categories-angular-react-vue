@@ -12,6 +12,7 @@ import { BannerComponent } from './banner/banner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
+import { AdvertsComponent } from './adverts/adverts.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductGalleryComponent } from './product-gallery/product-gallery.compo
     BannerComponent,
     TabsComponent,
     TabComponent,
-    ProductGalleryComponent
+    ProductGalleryComponent,
+    AdvertsComponent
   ],
   imports: [
     BrowserModule,

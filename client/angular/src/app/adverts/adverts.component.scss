@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/config';
+
+/* ==========================================================================
+   Adverts Component
+   ========================================================================== */
+.adverts {}
+.adverts-list {}
+
+.adverts-item {
+  @include x-clearfix;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.adverts-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.adverts-figure {
+  float: left;
+  margin-right: 10px;
+}
+
+.adverts-image {
+  height: 130px;
+  width: 170px;
+}
+
+.adverts-text {
+  color: #333;
+  display: block;
+  font-weight: 400;
+}
+
+.adverts-price {
+  color: #ff9232;
+  display: block;
+  font-style: normal;
+}
+
+.adverts-time {
+  color: #333;
+  font-size: 10px;
+}
+
+.adverts-description {
+  @include x-clearfix;
+  padding: 10px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.adverts-description-price {
+  position: absolute;
+  bottom: 10px;
+  left: 180px;
+
+  @media(min-width: $screen-desktop) {
+    float: right;
+    position: static;
+  }
+}
+
+.adverts-description-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 180px;
+}
+
+.adverts-specifications {
+  color: #333;
+  display: block;
+  font-size: 11px;
+}
+
+.adverts-local {
+  color: #333;
+  font-size: 11px;
+}
