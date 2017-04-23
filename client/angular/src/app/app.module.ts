@@ -13,6 +13,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 import { AdvertsComponent } from './adverts/adverts.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AdvertsComponent } from './adverts/adverts.component';
     TabsComponent,
     TabComponent,
     ProductGalleryComponent,
-    AdvertsComponent
+    AdvertsComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

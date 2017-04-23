@@ -1,0 +1,27 @@
+.pagination {
+  padding: 20px 0;
+}
+
+.pagination-list {
+  text-align: center;
+}
+
+.pagination-item {
+  display: inline-block;
+}
+
+.pagination-link {
+  color: #999;
+}
+
+.pagination-link.active {
+  color: #333;
+}
+
+.pagination-prev {
+  float: left;
+}
+
+.pagination-next {
+  float: right;
+}
