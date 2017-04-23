@@ -5,6 +5,11 @@
 
   margin: 0 auto;
   max-width: 960px;
+
+  .row {
+    margin-left: -$padding-width / 2;
+    margin-right: -$padding-width / 2;
+  }
 }
 
 [class*="col-"] {

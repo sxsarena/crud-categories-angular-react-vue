@@ -5,7 +5,7 @@
   <div class="row">
     <div class="sidebar">
       <div class="box">
-        <app-search-input></app-search-input>
+        <app-search-input [perTitle]="true"></app-search-input>
       </div>
       <div class="box">
         <app-filter></app-filter>
@@ -15,7 +15,7 @@
       <div class="box desktopOnly">
         <app-tabs>
           <app-tab [tabTitle]="'Estado'">
-            <ul>
+            <ul class="tab-list">
               <li><a href="">Acre (AC)</a></li>
               <li><a href="">Alagoas (AL)</a></li>
               <li><a href="">Amapá (AP)</a></li>
@@ -23,6 +23,33 @@
               <li><a href="">Bahia (BA)</a></li>
               <li><a href="">Ceará (CE)</a></li>
               <li><a href="">Distrito Federal (DF)</a></li>
+            </ul>
+            <ul class="tab-list">
+              <li><a href="">Espírito Santo (ES)</a></li>
+              <li><a href="">Goiás (GO)</a></li>
+              <li><a href="">Maranhão (MA)</a></li>
+              <li><a href="">Mato Grosso (MT)</a></li>
+              <li><a href="">Mato Grosso do Sul (MS)</a></li>
+              <li><a href="">Minas Gerais (MG)</a></li>
+              <li><a href="">Pará (PA)</a></li>
+            </ul>
+            <ul class="tab-list">
+              <li><a href="">Paraíba (PB)</a></li>
+              <li><a href="">Paraná (PR)</a></li>
+              <li><a href="">Pernambuco (PE)</a></li>
+              <li><a href="">Piauí (PI)</a></li>
+              <li><a href="">Rio de Janeiro (RJ)</a></li>
+              <li><a href="">Rio Grande do Norte (RN)</a></li>
+              <li><a href="">Rio Grande do Sul (RS)</a></li>
+            </ul>
+            <ul class="tab-list">
+              <li><a href="">Rondônia (RO)</a></li>
+              <li><a href="">Roraima (RR)</a></li>
+              <li><a href="">Santa Catarina (SC)</a></li>
+              <li><a href="">São Paulo (SP)</a></li>
+              <li><a href="">Sergipe (SE)</a></li>
+              <li><a href="">Tocantins (TO)</a></li>
+              <li><a href="">Todo Brasil</a></li>
             </ul>
           </app-tab>
           <app-tab tabTitle="DDD">

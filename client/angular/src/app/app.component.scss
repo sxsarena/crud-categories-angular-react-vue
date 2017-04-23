@@ -23,3 +23,16 @@
 .box {
   margin-bottom: 10px;
 }
+
+.tab-list {
+  @include x-column(6);
+
+  li {
+    font-size: 12px;
+    margin-top: 5px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

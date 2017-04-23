@@ -7,8 +7,10 @@
    Product Gallery Component
    ========================================================================== */
 .productGallery-title {
+  color: #333;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
 .productGallery-list {
@@ -41,6 +43,7 @@
   color: #333;
   display: block;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .productGallery-price {
@@ -56,5 +59,6 @@
 
   .productGallery-figure {
     float: none;
+    margin-bottom: 10px;
   }
 }

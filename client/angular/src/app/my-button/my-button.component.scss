@@ -11,12 +11,17 @@ $button-default-background-color-hover: #f2f2f2;
 $button-primary-background-color: $base-orange-color;
 $button-primary-background-color-hover: $base-orange-dark-color;
 
+$button-secundary-background-color: #fff;
+$button-secundary-background-color-hover: #f2f2f2;
+
 $button-disabled-background-color: #ccc;
 
 /* Color
  ========================================================================== */
 $button-color: $base-blue-color;
 $button-color-light: #fff;
+$button-color-dark: #333;
+$button-color-dark-icon: #ff0000;
 $button-disabled-color: #999;
 
 /* Border Color
@@ -27,6 +32,9 @@ $button-default-border-color-hover: $button-default-background-color-hover;
 $button-primary-border-color: $button-primary-background-color;
 $button-primary-border-color-hover: $button-primary-background-color-hover;
 
+$button-secundary-border-color: #d0d0d0;
+$button-secundary-border-color-hover: #d0d0d0;
+
 $button-disabled-border-color: $button-disabled-background-color;
 
 /* Button
@@ -34,7 +42,9 @@ $button-disabled-border-color: $button-disabled-background-color;
 %button {
   border: 1px solid transparent;
   border-radius: 4px;
+  display: inline-block;
   outline: none;
+  text-decoration: none;
   transition: all 0.5s;
 
   &:hover { cursor: pointer; }
@@ -56,74 +66,125 @@ $button-disabled-border-color: $button-disabled-background-color;
 /* ==========================================================================
    Button Component
    ========================================================================== */
+:host {
+  /* Default
+   ========================================================================== */
+  &.default {
+    @extend %button;
+    background: $button-default-background-color;
+    border-color: $button-default-border-color;
+    color: $button-color;
 
-/* Default
- ========================================================================== */
-.default {
-  @extend %button;
-  background: $button-default-background-color;
-  border-color: $button-default-border-color;
-  color: $button-color;
-
-  &:hover {
-    background-color: $button-default-background-color-hover;
-    border-color: $button-default-border-color-hover;
+    &:hover {
+      background-color: $button-default-background-color-hover;
+      border-color: $button-default-border-color-hover;
+    }
   }
-}
 
-/* Primary
- ========================================================================== */
-.primary {
-  @extend %button;
-  background: $button-primary-background-color;
-  border-color: $button-primary-border-color;
-  color: $button-color-light;
+  /* Primary
+   ========================================================================== */
+  &.primary {
+    @extend %button;
+    background: $button-primary-background-color;
+    border-color: $button-primary-border-color;
+    color: $button-color-light;
 
-  &:hover {
-    background-color: $button-primary-background-color-hover;
-    border-color: $button-primary-border-color-hover;
+    &:hover {
+      background-color: $button-primary-background-color-hover;
+      border-color: $button-primary-border-color-hover;
+    }
   }
-}
 
-/* Sizes
- ========================================================================== */
-.small {
-  font-size: 12px;
-  padding: 5px 10px;
-}
+  /* Secundary
+   ========================================================================== */
+  &.secundary {
+    @extend %button;
+    background: $button-secundary-background-color;
+    border-color: $button-secundary-border-color;
+    color: $button-color-dark;
 
-.medium {
-  font-size: 13px;
-  padding: 8px 15px;
-}
+    &:hover {
+      background-color: $button-secundary-background-color-hover;
+      border-color: $button-secundary-border-color-hover;
+    }
+  }
 
-.large {
-  font-size: 18px;
-  padding: 10px 26px;
-}
+  /* Nav
+   ========================================================================== */
+  &.nav {
+    @extend %button;
+    background: none;
+    border-color: transparent;
+    color: $base-blue-color;
 
-/* Block
- ========================================================================== */
-.block {
-  display: block;
-  width: 100%;
-}
+    &:hover {
+      background-color: $base-orange-color;
+      border-color: $base-orange-color;
+      color: $button-color-light;
+    }
+  }
 
-/* With icon
- ========================================================================== */
-:host .button--withIcon {
-  line-height: 1.4;
-}
+  /* Sizes
+   ========================================================================== */
+  &.small {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 
-.button--withIcon svg {
-  float: left;
-  margin-right: 5px;
-}
+  &.medium {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
 
-.button--withIcon.default svg {
-  fill: $button-color;
-}
+  &.large {
+    font-size: 18px;
+    padding: 10px 26px;
+  }
 
-.button--withIcon.primary svg {
-  fill: $button-color-light;
+  /* Block
+   ========================================================================== */
+  &.block {
+    display: block;
+    width: 100%;
+  }
+
+  /* With icon
+   ========================================================================== */
+  &.button--withIcon {
+    line-height: 1;
+  }
+
+  &.button--withIcon-left svg {
+    float: left;
+    margin-right: 5px;
+  }
+
+  &.button--withIcon-right svg {
+    float: right;
+    margin-left: 5px;
+  }
+
+  &.button--withIcon.default svg {
+    fill: $button-color;
+  }
+
+  &.button--withIcon.primary svg {
+    fill: $button-color-light;
+  }
+
+  &.button--withIcon.secundary svg {
+    fill: $button-color-dark-icon;
+  }
+
+  &.button--withIcon.nav {
+    svg {
+      fill: $base-blue-color;
+    }
+
+    &:hover {
+      svg {
+        fill: $button-color-light;
+      }
+    }
+  }
 }

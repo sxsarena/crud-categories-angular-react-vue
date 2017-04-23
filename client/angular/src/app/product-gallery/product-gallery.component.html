@@ -1,15 +1,18 @@
 <div class="productGallery">
   <h3 *ngIf="title" class="productGallery-title"> {{ title }}</h3>
-
-  <ul class="productGallery-list" [ngClass]="{ 'productGallery-list--vertical': type === 'vertical' }">
-    <li *ngFor="let product of products" class="productGallery-item">
-      <a class="productGallery-link" href="">
-        <figure class="productGallery-figure">
-          <img class="productGallery-image" src="{{ product.image }}">
-        </figure>
-        <strong class="productGallery-text">{{ product.name }}</strong>
-        <em class="productGallery-price">{{ product.price }}</em>
-      </a>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="row">
+      <ul class="productGallery-list" [ngClass]="{ 'productGallery-list--vertical': type === 'vertical' }">
+        <li *ngFor="let product of products" class="productGallery-item">
+          <a class="productGallery-link" href="">
+            <figure class="productGallery-figure">
+              <img class="productGallery-image" src="{{ product.image }}">
+            </figure>
+            <strong class="productGallery-text">{{ product.name }}</strong>
+            <em class="productGallery-price">{{ product.price }}</em>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

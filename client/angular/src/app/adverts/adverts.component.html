@@ -1,8 +1,9 @@
 <div class="adverts">
-  <header>
-    8.234.908 Resultados para essa busca
-
-    Salvar busca
+  <header class="adverts-header">
+    <div class="adverts-header-results">
+      <p><strong class="adverts-header-results-highlight">8.234.908</strong> Resultados para essa busca</p>
+    </div>
+    <button type="button" app-my-button icon="heart" buttonType="secundary" class="adverts-header-button">Salvar busca</button>
   </header>
   <ul class="adverts-list">
     <li *ngFor="let advert of adverts" class="adverts-item">
@@ -26,5 +27,5 @@
       </a>
     </li>
   </ul>
+  <app-pagination class="adverts-pagination"></app-pagination>
 </div>
-<app-pagination></app-pagination>

@@ -24,6 +24,20 @@ $searchInput-icon-color: #757575;
   position: relative;
 }
 
+.searchInput-group--extra {
+  margin-top: 10px;
+}
+
+.searchInput-field--checkbox {
+  float: left;
+}
+
+.searchInput-label--checkbox {
+  color: #333;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
 .searchInput-field {
   border: 1px solid $searchInput-border-color;
   border-radius: 4px;

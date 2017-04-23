@@ -1,4 +1,9 @@
+@import '../../assets/scss/config';
+
+
 .tab {
+  @include x-clearfix;
+
   border: 1px solid #d0d0d0;
   border-radius: 0 0 5px 5px;
   border-top: none;
