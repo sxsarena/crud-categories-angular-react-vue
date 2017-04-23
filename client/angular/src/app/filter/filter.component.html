@@ -1,0 +1,15 @@
+<div class="filter">
+  <h3 class="filter-title">Filtrar</h3>
+  <nav class="filter-content">
+    <ul class="filter-list">
+      <li *ngFor="let category of categories" class="filter-item">
+        <a class="filter-link" href="{{ category.url }}">{{ category.label }}</a>
+        <ul class="filter-sublist">
+          <li class="filter-subitem" *ngFor="let childCategory of category.children">
+            <a class="filter-sublink" href="{{ childCategory.label }}">{{ childCategory.label }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -14,6 +14,8 @@ import { TabComponent } from './tab/tab.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 import { AdvertsComponent } from './adverts/adverts.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { FilterComponent } from './filter/filter.component';
+import { FilterService } from './filter/filter.service';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,15 @@ import { PaginationComponent } from './pagination/pagination.component';
     TabComponent,
     ProductGalleryComponent,
     AdvertsComponent,
-    PaginationComponent
+    PaginationComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [FilterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
