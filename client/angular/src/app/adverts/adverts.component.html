@@ -1,9 +1,12 @@
 <div class="adverts">
-  <header class="adverts-header">
+  <header class="adverts-header desktopOnly">
     <div class="adverts-header-results">
       <p><strong class="adverts-header-results-highlight">8.234.908</strong> Resultados para essa busca</p>
     </div>
-    <button type="button" app-my-button icon="heart" buttonType="secundary" class="adverts-header-button">Salvar busca</button>
+    <button type="button" app-my-button buttonType="secundary" class="adverts-header-button">
+      <app-icon name="heart"></app-icon>
+      Salvar busca
+    </button>
   </header>
   <ul class="adverts-list">
     <li *ngFor="let advert of adverts" class="adverts-item">

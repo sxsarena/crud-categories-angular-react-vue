@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/config';
+
+/* ==========================================================================
+   Icon Component
+   ========================================================================== */
+:host.left {
+  float: left;
+
+  svg { margin-right: 5px; }
+}
+
+:host.right {
+  float: right;
+
+  svg { margin-left: 5px; }
+}
+
+.default :host {
+  svg {
+    fill: $base-blue-color;
+  }
+}
+
+.primary :host {
+  svg {
+    fill: #ffffff;
+  }
+}
+
+.secundary :host {
+  svg {
+    fill: #ff0000;
+  }
+}
+
+.nav :host {
+  svg {
+    fill: $base-blue-color;
+  }
+}
+
+.nav:hover :host {
+  svg {
+    fill: #ffffff;
+  }
+}
+
+.filter-link :host svg {
+  fill: $base-blue-color;
+}
+
+.filter-link:hover :host svg {
+  fill: #ffffff;
+}
+

@@ -21,7 +21,6 @@ $button-disabled-background-color: #ccc;
 $button-color: $base-blue-color;
 $button-color-light: #fff;
 $button-color-dark: #333;
-$button-color-dark-icon: #ff0000;
 $button-disabled-color: #999;
 
 /* Border Color
@@ -152,39 +151,5 @@ $button-disabled-border-color: $button-disabled-background-color;
    ========================================================================== */
   &.button--withIcon {
     line-height: 1;
-  }
-
-  &.button--withIcon-left svg {
-    float: left;
-    margin-right: 5px;
-  }
-
-  &.button--withIcon-right svg {
-    float: right;
-    margin-left: 5px;
-  }
-
-  &.button--withIcon.default svg {
-    fill: $button-color;
-  }
-
-  &.button--withIcon.primary svg {
-    fill: $button-color-light;
-  }
-
-  &.button--withIcon.secundary svg {
-    fill: $button-color-dark-icon;
-  }
-
-  &.button--withIcon.nav {
-    svg {
-      fill: $base-blue-color;
-    }
-
-    &:hover {
-      svg {
-        fill: $button-color-light;
-      }
-    }
   }
 }

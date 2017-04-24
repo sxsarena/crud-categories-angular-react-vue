@@ -16,6 +16,7 @@ import { AdvertsComponent } from './adverts/adverts.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { FilterComponent } from './filter/filter.component';
 import { FilterService } from './filter/filter.service';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FilterService } from './filter/filter.service';
     ProductGalleryComponent,
     AdvertsComponent,
     PaginationComponent,
-    FilterComponent
+    FilterComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

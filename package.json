@@ -7,7 +7,7 @@
   "main": "./server/index.js",
   "scripts": {
     "ng": "ng",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "cross-env NODE_ENV=production yarn build:angular && node server.js",
     "start:angular": "ng serve --base-href /angular",
     "build:angular": "ng build",
     "test:angular": "ng test",
