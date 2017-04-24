@@ -5,7 +5,8 @@ import { Component, OnInit, Input } from '@angular/core';
   host: {
     '[class.icon]': 'true',
     '[class.left]': 'position === "left"',
-    '[class.right]': 'position === "right"'
+    '[class.right]': 'position === "right"',
+    '[class.center]': 'position === "center"'
   },
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss']

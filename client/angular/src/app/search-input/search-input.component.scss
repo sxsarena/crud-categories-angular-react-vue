@@ -12,11 +12,6 @@ $searchInput-icon-color: #757575;
    Search Input Component
    ========================================================================== */
 .searchInput {
-  display: none;
-
-  @media(min-width: $screen-desktop) {
-    display: block;
-  }
 }
 
 .searchInput-group {
@@ -25,7 +20,12 @@ $searchInput-icon-color: #757575;
 }
 
 .searchInput-group--extra {
+  display: none;
   margin-top: 10px;
+
+  @media(min-width: $screen-desktop) {
+    display: block;
+  }
 }
 
 .searchInput-field--checkbox {

@@ -1,7 +1,31 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@import '../../assets/scss/config';
+
+/* ==========================================================================
+   Filter Componentl
+   ========================================================================== */
 .filter {
-  border: 1px solid #d0d0d0;
-  border-radius: 5px;
-  overflow: hidden;
+  display: none;
+
+  @media(min-width: $screen-desktop) {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.filter.on {
+  background: #fff;
+  display: block;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .filter-title {
@@ -18,34 +42,80 @@
 
 .filter-list {}
 
-.filter-item {
+.filter-text,
+.filter-subtext {
+  border-top: 1px solid #ebebeb;
+  display: block;
+  padding: 15px 0;
+}
+
+.filter-link,
+.filter-sublink {
+  display: block;
+  font-size: 14px;
   padding: 0 10px;
-
-  .filter-link {
-    border-top: 1px solid #ebebeb;
-  }
-
-  &:first-child .filter-link {
-    border-top: 1px solid transparent;
-  }
+  text-decoration: none;
 
   &:hover {
     background: #2195db;
+    color: #fff;
 
-    .filter-link {
+    .filter-text,
+    .filter-subtext {
       border-top: 1px solid transparent;
-      color: #fff;
     }
   }
 }
 
-.filter-link {
-  display: block;
-  font-size: 14px;
-  padding: 15px 0;
-  text-decoration: none;
+.filter-item {
+  &:first-child .filter-text,
+  &:first-child .filter-subtext {
+    border-top: 1px solid transparent;
+  }
 }
 
 .filter-sublist {
   display: none;
 }
+
+.filter-item--open {
+  .filter-sublist {
+    background: #fff;
+    display: block;
+  }
+}
+
+.filterMobile {
+  @include x-clearfix;
+}
+
+.filterMobile-text {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.filterMobile-field {
+  padding-right: 60px;
+  position: relative;
+}
+
+.filterMobile-button {
+  background: #fff;
+  border: 1px solid #d0d0d0!important;
+  border-radius: 5px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.filterMobile-button-text {
+  color: #333;
+  display: block;
+  font-size: 9px;
+  text-align: center;
+  text-transform: uppercase;
+}
+

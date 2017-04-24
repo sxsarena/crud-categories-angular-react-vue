@@ -1,15 +1,42 @@
-<div class="filter">
-  <h3 class="filter-title">Filtrar</h3>
+<div class="filterMobile mobileOnly">
+  <p class="filterMobile-text">DDD 21 - Rio de Janeiro e Região</p>
+  <div class="filterMobile-field">
+    <app-search-input></app-search-input>
+    <button class="filterMobile-button" (click)="showFilter()">
+      <app-icon name="filter" position="center"></app-icon>
+      <span class="filterMobile-button-text">Filtrar</span>
+    </button>
+  </div>
+</div>
+<div class="filter" [ngClass]="{ 'on': isOpen === true }">
+  <h3 class="filter-title">
+    <app-icon name="close" class="mobileOnly" (click)="hideFilter()"></app-icon>
+    Filtrar
+  </h3>
   <nav class="filter-content">
     <ul class="filter-list">
-      <li *ngFor="let category of categories" class="filter-item">
-        <a class="filter-link" href="{{ category.url }}">
-          <app-icon [name]="category.url"></app-icon>
-          {{ category.label }}
+      <li *ngFor="let category of categories" class="filter-item" [ngClass]="{ 'filter-item--open': category.isSubmenuOpen }">
+
+        <a *ngIf="!category.isClosed && !category.isSubmenuOpen" class="filter-link" href="{{ category.url }}" (click)="onSelectCategory($event)">
+          <span class="filter-text">
+            <app-icon [name]="category.url"></app-icon>
+            {{ category.label }}
+          </span>
+        </a>
+        <a *ngIf="category.isSubmenuOpen" class="filter-link" href="{{ category.url }}" (click)="onShowAll()">
+          <span class="filter-text">
+            <app-icon name="arrow-left"></app-icon>
+            <app-icon [name]="category.url"></app-icon>
+            {{ category.label }}
+          </span>
         </a>
         <ul class="filter-sublist">
           <li class="filter-subitem" *ngFor="let childCategory of category.children">
-            <a class="filter-sublink" href="{{ childCategory.label }}">{{ childCategory.label }}</a>
+            <a class="filter-sublink" href="{{ childCategory.label }}">
+              <span class="filter-subtext">
+                {{ childCategory.label }}
+              </span>
+            </a>
           </li>
         </ul>
       </li>

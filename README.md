@@ -43,7 +43,7 @@ yarn start
 ```
 
 * Server running on http://localhost:3000
-
+* Access http://localhost:3000/angular
 
 ## API
 
