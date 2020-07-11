@@ -1,12 +1,12 @@
 # Challenge
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues/org-arena/crud-categories-angular-react-vue.svg)](https://github.com/org-arena/crud-categories-angular-react-vue/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/org-arena/crud-categories-angular-react-vue.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/org-arena/crud-categories-angular-react-vue.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/org-arena/crud-categories-angular-react-vue.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/org-arena/crud-categories-angular-react-vue.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/org-arena/crud-categories-angular-react-vue/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/sxsarena/crud-categories-angular-react-vue.svg)](https://github.com/sxsarena/crud-categories-angular-react-vue/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/sxsarena/crud-categories-angular-react-vue.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/sxsarena/crud-categories-angular-react-vue.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/sxsarena/crud-categories-angular-react-vue.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/sxsarena/crud-categories-angular-react-vue.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/sxsarena/crud-categories-angular-react-vue/total.svg)
 
 ## Resources
 
@@ -84,7 +84,7 @@ yarn test:server
 
 ## Log
 
-Check [Releases](https://github.com/org-arena/crud-categories-angular-react-vue/releases) for detailed changelog.
+Check [Releases](https://github.com/sxsarena/crud-categories-angular-react-vue/releases) for detailed changelog.
 
 ## License
 
